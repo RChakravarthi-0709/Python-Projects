@@ -1,0 +1,8 @@
+words1.txt
+Please enter the first word:
+Invalid word, better luck next time
+Computer score was:
+Your score was:
+Good job, you beat the computer!
+Good effort, you tied the computer!
+Nice try, the computer wins.

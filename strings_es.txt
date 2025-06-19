@@ -1,0 +1,8 @@
+words1.txt
+Por favor, introduzca la primera palabra:
+Palabra inválida, mejor suerte la próxima vez
+La puntuación de la computadora fue:
+Su puntuación fue:
+¡Buen trabajo, venciste a la computadora!
+¡Buen esfuerzo, has atado el ordenador!
+Buen intento, la computadora gana.
