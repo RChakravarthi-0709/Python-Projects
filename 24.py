@@ -1,5 +1,5 @@
 import datetime as dt
-
+import random as rd
 gameWords = []
 playerPoints = 0
 computerPoints = 0
@@ -26,7 +26,9 @@ if not loss:
     while computerWord == "":
         for i in range(numEntries):
             if allWords[i][0] == necessaryLetter:
-                computerWord = allWords[i].lower()
+                index = rd.randint(0, 10)
+                index = i - index
+                computerWord = allWords[index].lower()
     gameWords.append(computerWord)
     wordPoints = len(computerWord)
     computerPoints += wordPoints
@@ -55,6 +57,8 @@ while not loss and j <= 4:
     while computerWord == "":
         for i in range(numEntries):
             if allWords[i][0] == necessaryLetter and allWords[i] not in gameWords:
+                index = rd.randint(0, 10)
+                index = i - index
                 computerWord = allWords[i].lower()
     gameWords.append(computerWord)
     wordPoints = len(computerWord)
