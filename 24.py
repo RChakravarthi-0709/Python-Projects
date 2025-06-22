@@ -5,13 +5,11 @@ playerPoints = 0
 computerPoints = 0
 moreRounds = True
 loss = False
-
+fname1 = "strings_"
+fname3 = ".txt"
 gameLang = input("What language would you like? ").lower()  #en for english, sp for spanish
-if gameLang == "es":
-    filename = "strings_es.txt"
-else:
-    filename = "strings_en.txt"
-s1 = open(filename)
+fname = fname1 + gameLang + fname3
+s1 = open(fname, "r")
 gameStrings = s1.read().splitlines()
 f1 = open(gameStrings[0], "r")
 allWords = f1.read().splitlines()
